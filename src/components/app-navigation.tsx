@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { LayoutDashboard, Settings, Landmark } from "lucide-react";
+const links = [{ href: "/dashboard", label: "Dashboard", icon: LayoutDashboard }, { href: "/settings", label: "Settings", icon: Settings }];
+export function AppNavigation() { return <aside className="border-b bg-card md:min-h-screen md:w-64 md:border-b-0 md:border-r"><div className="flex h-16 items-center border-b px-6 text-lg font-semibold"><Landmark className="mr-2 h-5 w-5" />Atlas</div><nav aria-label="Main navigation" className="flex gap-2 p-3 md:flex-col">{links.map(({ href, label, icon: Icon }) => <Link key={href} href={href} className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"><Icon className="h-4 w-4" />{label}</Link>)}</nav></aside>; }

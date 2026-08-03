@@ -1,0 +1,3 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+export const metadata = { title: "Dashboard" };
+export default function DashboardPage() { return <div className="mx-auto max-w-6xl space-y-6"><div><h1 className="text-3xl font-bold tracking-tight">Dashboard</h1><p className="text-muted-foreground">Your Atlas workspace is ready.</p></div><Card><CardHeader><CardTitle>Welcome to Atlas</CardTitle><CardDescription>The application foundation is configured and secure.</CardDescription></CardHeader><CardContent><p className="text-sm text-muted-foreground">Financial tools will arrive in a future milestone.</p></CardContent></Card></div>; }
